@@ -22,7 +22,7 @@ db.select('*').from('users').then(data => {
 const app = express();
 app.use(bodyParser.json());
 app.use(cors({
-    origin: "https://myserver-yt33.onrender.com"
+    origin: "*"
 }));
 
 app.get('/', (req, res)=> {
